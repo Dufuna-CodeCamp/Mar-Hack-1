@@ -2,7 +2,6 @@
 Team 1, Repository
 
 This README explains how to get started with this repository.
-Team
 This repository contains code written by Team 1 for the Dufuna March 2022 Hackathon.
 
 **How to get started**
