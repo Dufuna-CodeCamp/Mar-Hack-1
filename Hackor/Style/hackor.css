@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    /* padding: 0 2%; */
+    overflow-x: hidden;
+    /* border: solid black thin; */
+    /* font-family: ; */
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+img{
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+}
+.wrapper{
+    width: 99%;
+    margin-left: 0;
+}
+header{
+    background: #312d2d;
+    color: #fff;
+}
+.h-content{
+    padding: 0 2%;
+}
+.upper-part{
+    display: flex;
+    justify-content: space-between;
+}
+.navs{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.navs a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 4%;
+}
+.lower-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price{
+    margin-left: 40%;
+}
+.course_info{
+    align-content: flex-end;
+}
+.main{
+    width: 100%;
+}
+.main-wrapper{
+    padding: 0 2%;
+}
+.career-discription{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    overflow-y: hidden;
+}
+.discription-heading{
+    margin-left: 0;
+    margin-top: 2%;
+}
+.discription{
+    width: 100%;
+    min-height: 90px;
+}
+.course_content_heading{
+    padding: 2% 0;
+}
+.course_content{
+    width: 45%;
+    min-height: 50px;
+}
+.sponsor{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.sponsor_info{
+    width: 20%;
+    
+}
+.s_heading{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 50%;
+}
+.s_heading div{
+    text-align: center;
+    justify-content: center;
+}
+.sponsor_name{
+    width: 100%;
+    height: 50%;
+}
+footer{
+    padding: 0 2%;
+    background-color: #312d2d;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border-radius: 0px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo2{
+    padding-top: 2%;
+}
+.info{
+    padding-top: 2%;
+}
+.contacts{
+    padding-top: 0;
+}
+.media{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
