@@ -41,13 +41,16 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .upper-part {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
+
 .navs {
   list-style-type: none;
   width: 40%;
@@ -55,6 +58,33 @@ header {
   justify-content: space-between;
   font-size: 16px;
   font-weight: 600;
+  border-bottom: none;
+}
+
+.nav__btns::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(228, 182, 228);
+  transition: width .3s;
+}
+
+.nav__btns:hover::after {
+  width: 100%;
+}
+
+select {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lang {
+  background-color: #474646;
+  color: #fff;
 }
 
 .navs a {
@@ -67,7 +97,7 @@ header {
   width: 70%;
   position: relative;
   bottom: 35px;
-  left: 30.2%;
+  left: 15.5%;
 }
 
 .lower-part {
@@ -135,6 +165,7 @@ header {
   line-height: 30px;
   font-weight: 500;
   color: #474646;
+  margin-left: 25px;
 }
 
 .sponsor {
@@ -200,13 +231,6 @@ footer a {
 
 .logo2 {
   width: 350px;
-}
-
-.title {
-  color: #fff;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 36px;
 }
 
 .info__title {
