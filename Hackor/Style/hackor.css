@@ -1,131 +1,271 @@
-*{
-    box-sizing: border-box;
-    /* padding: 0 2%; */
-    overflow-x: hidden;
-    /* border: solid black thin; */
-    /* font-family: ; */
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&family=Open+Sans:wght@400;500;600&family=Outfit:wght@300;400;600&family=Poppins:wght@500;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* padding: 0 2%; */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* border: solid black thin; */
+  /* font-family: ; */
 }
-body{
-    width: 100%;
-    height: 100%;
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-img{
-    width: 15px;
-    height: 15px;
-    border-radius: 5px;
+
+.logo {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
 }
-.wrapper{
-    width: 99%;
-    margin-left: 0;
+
+header {
+  width: 100%;
+  background: url(../images/maxim-tolchinskiy-ectRUZRYrYk-unsplash.jpg);
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-header{
-    background: #312d2d;
-    color: #fff;
+
+.h-content {
+  color: #fff;
+  padding: 32px 70px 10px;
+  height: 285px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.h-content{
-    padding: 0 2%;
+
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.upper-part{
-    display: flex;
-    justify-content: space-between;
+.navs {
+  list-style-type: none;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
 }
-.navs{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
+
+.navs a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 27px;
 }
-.navs a{
-    text-decoration: none;
-    color: #fff;
-    padding-right: 4%;
+
+.des {
+  width: 70%;
+  position: relative;
+  bottom: 35px;
+  left: 30.2%;
 }
-.lower-part{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+
+.lower-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  width: 100%;
 }
-.price{
-    margin-left: 40%;
+
+.duration {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: end;
 }
-.course_info{
-    align-content: flex-end;
+
+.course_info {
+  align-content: flex-end;
 }
-.main{
-    width: 100%;
+.main {
+  max-width: 1240px;
 }
-.main-wrapper{
-    padding: 0 2%;
+.main-wrapper {
+  padding: 91px 0px 0px;
 }
-.career-discription{
-    width: 100%;
-    min-height: 70px;
-    display: flex;
-    overflow-y: hidden;
+
+.career__text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
 }
-.discription-heading{
-    margin-left: 0;
-    margin-top: 2%;
+
+.career-description {
+  margin-bottom: 50px;
 }
-.discription{
-    width: 100%;
-    min-height: 90px;
+
+.description-heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 30px;
 }
-.course_content_heading{
-    padding: 2% 0;
+
+.description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #474646;
 }
-.course_content{
-    width: 45%;
-    min-height: 50px;
+
+.course {
+  margin-bottom: 179px;
 }
-.sponsor{
-    width: 100%;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
+
+.course_content_heading {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000000;
 }
-.sponsor_info{
-    width: 20%;
-    
+
+.course_content {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #474646;
 }
-.s_heading{
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    height: 50%;
+
+.sponsor {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
-.s_heading div{
-    text-align: center;
-    justify-content: center;
+
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
-.sponsor_name{
-    width: 100%;
-    height: 50%;
+
+.underline {
+  width: 180px;
 }
-footer{
-    padding: 0 2%;
-    background-color: #312d2d;
-    width: 100%;
-    min-height: 200px;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    border-radius: 0px;
+
+.sponsor_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-footer a{
-    text-decoration: none;
-    color: #fff;
+
+.sponsor_heading {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
 }
-.logo2{
-    padding-top: 2%;
+
+.s_heading div {
+  text-align: center;
+  justify-content: center;
 }
-.info{
-    padding-top: 2%;
+.sponsor_name {
+  width: 100%;
+  height: 50%;
 }
-.contacts{
-    padding-top: 0;
+
+footer {
+  background-color: #474646;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 }
-.media{
-    margin-top: 2%;
-    display: flex;
-    justify-content: space-between;
+
+.footer__container {
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.logo2 {
+  width: 350px;
+}
+
+.title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.info__title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 36px;
+  padding-left: 4px;
+}
+
+.info__text {
+  color: #fff;
+  font-size: 18px;
+}
+
+.logo__bottom {
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-bottom: 85px;
+}
+
+.additional_info {
+  color: #a5a5a5;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.company_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190px;
+  margin-top: 20px;
+}
+
+.email {
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-top: 24px;
+  padding-left: 4px;
+}
+
+.media {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+}
+
+.exiting_info {
+  width: 100%;
+  max-width: 1240px;
+  color: #a5a5a5;
+  margin-bottom: 63px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
 }
