@@ -2,13 +2,11 @@
 
 * {
   box-sizing: border-box;
-  /* padding: 0 2%; */
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  /* border: solid black thin; */
-  /* font-family: ; */
 }
+
 body {
   width: 100vw;
   display: flex;
@@ -24,7 +22,7 @@ body {
 
 header {
   width: 100%;
-  background: url(../images/maxim-tolchinskiy-ectRUZRYrYk-unsplash.jpg);
+  background: url(../Assets/maxim-tolchinskiy-ectRUZRYrYk-unsplash.jpg);
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.8);
   background-size: cover;
   background-position: center;
@@ -62,12 +60,12 @@ header {
 }
 
 .nav__btns::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 2px;
   background: rgb(228, 182, 228);
-  transition: width .3s;
+  transition: width 0.3s;
 }
 
 .nav__btns:hover::after {
@@ -118,9 +116,11 @@ select {
 .course_info {
   align-content: flex-end;
 }
+
 .main {
   max-width: 1240px;
 }
+
 .main-wrapper {
   padding: 91px 0px 0px;
 }
@@ -292,4 +292,128 @@ footer a {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  .upper-part {
+    align-items: flex-start;
+  }
+
+  .navs {
+    flex-direction: column;
+  }
+
+  .h-content {
+    padding: 12px 15px 10px;
+  }
+
+  .des {
+    display: none;
+  }
+
+  .career__text {
+    font-size: 24px;
+  }
+
+  .lower-part {
+    flex-direction: column;
+  }
+
+  .duration {
+    text-align: center;
+  }
+
+  .main-wrapper {
+    padding: 61px 15px 0px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .course_content {
+    font-size: 16px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    margin: 40px 0px;
+    padding: 0px 15px;
+  }
+
+  .logo__bottom {
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 25px;
+  }
+
+  .additional_info {
+    font-size: 16px;
+  }
+
+  .company_info {
+    margin-bottom: 25px;
+  }
+
+  .exiting_info {
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .info__title,
+  .email {
+    padding-left: 0;
+  }
+
+  .media {
+    margin-left: -4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .h-content {
+    padding: 12px 15px 10px;
+  }
+
+  .career__text {
+    font-size: 36px;
+  }
+
+  .navs {
+    width: 55%;
+  }
+
+  .main-wrapper {
+    padding: 60px 15px;
+  }
+
+  .description, .course_content {
+    font-size: 16px;
+  }
+
+  .des {
+    bottom: 55px;
+  }
+
+  .logo2 {
+    width: 250px;
+  }
+
+  .company_info {
+    margin-top: 0;
+  }
+
+  .additional_info {
+    font-size: 20px;
+  }
+
+  .footer__container {
+    margin: 40px 0px;
+    padding: 0px 15px;
+  }
+
+  .exiting_info {
+    font-size: 20px;
+    padding-left: 15px;
+  }
 }
