@@ -201,6 +201,7 @@ button {
   box-shadow: 0 0 0.5px 0.5px #d5c0dd;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .box {
