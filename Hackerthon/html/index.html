@@ -9,20 +9,30 @@
     </head>
     <body>
         <div class="top">
-            <nav>
-                
-                <ul>
-                    <li class="name"><a href="/"><h1>Genius<br> Cave </span></h1></a></li>
-                    <li><a href="#">EN</a></li>
-                    <li><a href="#">WORK WITH US</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">ACADEMY</a></li>
-                    <li><a href="#">TRACKS</a></li>
-            </nav>
-            
+                <div class="h-content">
+                    <div class="upper-part">
+                      <div class="logo">
+                        <p class="logo__top">Genius</p>
+                        <p class="logo__botm">Cave</p>
+                      </div>
+                      <ul class="navs">
+                        <li><a href="#" class="nav__btns">TRACKS</a></li>
+                        <li><a href="#" class="nav__btns">ACADEMY</a></li>
+                        <li><a href="#" class="nav__btns">FAQs</a></li>
+                        <li><a href="#" class="nav__btns">WORK WITH US</a></li>
+                        <div id="select">
+                          <select>
+                            <option value="0" class="lang" selected>EN</option>
+                            <option value="1" class="lang">FR</option>
+                            <option value="2" class="lang">GB</option>
+                          </select>
+                        </div>
+                      </ul>
+                    </div>    
             <h1 id="join">Join an ever growing </br>community of <br><span>Tech Enthusiasts</span></h1>
             <span id="wait"><button type="button">Join wait-list &rightarrow;</button></span>
         </div>
+
         <section class="track">
             <h2 class="titles">Our Tracks</h2>
             <div>
@@ -30,55 +40,67 @@
                     <li>
                         <div class="track-list-items">
                             <img src="../images/IT-business-support-new.jpg" alt="IT Support">
-                            <h3>IT Technical Support</h3>
+                            <div class="box">
+                                <h3 class="title">IT Technical Support</h3>
                             <p>Learn about Hardware, Software, Internet, Infrastructure, IT Security and Networking</p>
+                            </div>
                         </div>
                     </li>
                        
                     <li><div class="track-list-items">
                         <img  src="../images/7-Software-Development-Industry-Career-Options-Laneways.Agency.jpg" alt="software development">
-                        <h3>Software Development</h3><p> Build functional software and web applications to solve real problems</p>
+                        <div class="box">
+                            <h3 class="title">Software Development</h3><p> Build functional software and web applications to solve real problems</p>
+                        </div>
                         </div>
                     </li>
                     <li>
                         <div class="track-list-items">
                         <img  src="../images/jordan-harrison-40XgDxBfYXM-unsplash.jpg" alt="Network Engineering">
-                        <h3>Network Engineering</h3>
+                        <div class="box">
+                        <h3 class="title">Network Engineering</h3>
                         <p> Learn skills that enable you to plan, implement and oversee computer networks that support voice, data, video and wireless network services</p>
+                        </div>
                         </div>
                     </li>
                     <li>
                         <div class="track-list-items">
                         <img  src="../images/product-management.jpeg" alt="product management">
-                        <h3>Product Management</h3>
+                        <div class="box">
+                            <h3 class="title">Product Management</h3>
                         <p> Build product Management skills as you learn how to plan, develop and manage a successful digital product</p>
+                        </div>
                         </div>
                     </li>
                     <li>
                         <div class="track-list-items">
                         <img  src="../images/product-design.jpg" alt="product design">
-                        <h3>Product Design</h3>
+                        <div class="box">
+                            <h3 class="title">Product Design</h3>
                         <p> Delve into the world of creating outstanding digital products while understanding and simplifying human-Computer interactions</p>
+                        </div>
                         </div>
                     </li>
                     <li>
                         <div class="track-list-items">
                         <img src="../images/data-analysis.jpeg" alt="data-analysis">
-                        <h3>Data Analysis</h3>
+                        <div class="box">
+                            <h3 class="title">Data Analysis</h3>
                         <p> Acquire expert data manipulation and analysis skills.</p>
+                        </div>
                         </div>
                     </li>
                 </ul>
             </div>
-
         </section>
-        <hr>
         <section class="partners">
             <h2 class="titles">Our Partners</h2>
-            <ul>
+            <ul class="partner">
+                <div class="pat1">
                 <li><img src="../images/facebook.png" alt="facebook"></li>
                 <li><img src="../images/google.png" alt="google"></li>
                 <li><img src="../images/techsmith.png" alt="techsmith"></li>
+                </div>
                 <li id="techsoup"><img src="../images/techsoup.png" alt="techsoup"></li>
             </ul>
         </section>
@@ -132,16 +154,16 @@
 
         </section>
         <section class="recommendations">
-            <h2 class="titles">Testiomonials</h2>
-            <ul>
+            <h2 class="titles">Testimonials</h2>
+            <ul class="full">
                 <li>
-                    <div class="testimonial1">
+                    <div class="testimonial">
                         <img src="../images/testimonial.jpg" alt="person1">
                         <p>"undertaking a course in Networking with Genius Cave made me very competent and accorded me a promotion at work barely two months after completion"</p>
                     </div>
                 </li>
                    
-                <li><div class="big-testimonial">
+                <li><div class="testimonial">
                     <img  src="../images/testimonial1.jpeg" alt="person2">
                     <p> "My time with Genius Cave was really well spent. The lesson delivery is superb. Within 8 months i bacame a very great web devolper. I am now able to comfortably code using HTML, CSS and Javascript"</p>
                     </div>
@@ -156,35 +178,41 @@
             </ul>
 
         </section>
-        <section class="footer">
-            <div class="column">
-                <h1>Genius Cave</h1>
-                <p id="start">Start off with us today as we<br>walk with you on a new path</p>
-                <p class="copy">Copyright&copy;2022</p>
+        <footer>
+            <div class="footer__container">
+              <div class="logo2">
+                <div class="logo__bottom">
+                  <p>Genius</p>
+                  <p>Cave</p>
+                </div>
+                <div class="additional_info">
+                  Start off with us today as we walk with you on a new path.
+                </div>
+              </div>
+              <div class="info">
+                <div class="company_info">
+                  <a href="#" class="info__text">Company</a>
+                  <a href="#" class="info__text">Track</a>
+                  <a href="#" class="info__text">Academy</a>
+                  <a href="#" class="info__text">FAQs</a>
+                  <a href="#" class="info__text">Work with us </a>
+                </div>
+              </div>
+              <div class="contacts">
+                <p class="info__title">Contact us on:</p>
+                <a href="#" class="email">techinfo@geniuscave.org</a>
+                <div class="media">
+                  <a href="#"><img src="../Assets/LinkedIn (1).svg" alt="" /></a>
+                  <a href="#"><img src="../Assets/Instagram Circle.svg" alt="" /></a>
+                  <a href="#"><img src="../Assets/Facebook.svg" alt="" /></a>
+                  <a href="#"><img src="../Assets/Twitter Squared.svg" alt="" /></a>
+                </div>
+              </div>
             </div>
-            <div class="column">
-                <ul class="academy-links">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Track</a></li>
-                    <li><a href="#">Academy</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Work with us</a></li>
+            <div class="exiting_info">
+              <p>Copyright &copy; 2022</p>
             </div>
-                
-            </ul>
-            <div class="column">
-                    <p id="contact">Contact us:<p>
-                    <p>techinfo@geniuscave.org</p>
-                <ul class="our-links">   
-                    <li><img  src="../images/linkedIn.png" alt="linkedIn"></li> 
-                    <li><img  src="../images/instagram.png" alt="instagram"></li>
-                    <li><img  src="../images/facebook1.png" alt="facebook"></li>
-                    <li><img  src="../images/twitter.jpeg" alt="twitter"></li>
-
-                </ul>
-            </div>
-
-        </section>
+          </footer>
     </body>
 
 </html>

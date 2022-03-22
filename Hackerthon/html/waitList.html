@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genius Cave</title>
+    <link rel="stylesheet" href="../waitList.css" />
+  </head>
+  <body>
+    <header>
+      <div class="h-content">
+        <div class="upper-part">
+          <div class="logo">
+            <p class="logo__top">Genius</p>
+            <p class="logo__botm">Cave</p>
+          </div>
+          <ul class="navs">
+            <li><a href="#" class="nav__btns">TRACKS</a></li>
+            <li><a href="#" class="nav__btns">ACADEMY</a></li>
+            <li><a href="#" class="nav__btns">FAQs</a></li>
+            <li><a href="#" class="nav__btns">WORK WITH US</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-10">
+          <label for="fname">First Name:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Enter your first name"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="lname">Last Name:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Enter your last name"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="email">Email:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="it should contain @,."
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="mobile">Mobile:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            placeholder="only 10 digits are allowed"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="gender" required>Gender:</label>
+        </div>
+        <div class="col-90">
+          <input type="radio" id="male" name="gender" value="male" />Male
+          <input type="radio" id="female" name="gender" value="female" />Female
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="dob">Date Of Birth:</label>
+        </div>
+        <div class="col-90">
+          <input type="Date" id="dob" name="dob" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="address">Address:</label>
+        </div>
+        <div class="col-90">
+          <textarea name="address" id="address" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="city">City:</label>
+        </div>
+        <div class="col-90">
+          <input type="text" id="city" name="city" maxlength="10" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="pincode">Area PIN:</label>
+        </div>
+        <div class="col-90">
+          <input type="number" id="pin" name="pin" maxlength="6" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="state">State:</label>
+        </div>
+        <div class="col-90">
+          <input type="text" id="state" name="state" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="qualification" required>Qualification:</label>
+        </div>
+        <div class="col-90">
+          <select name="qualification" id="qualification">
+            <option value=" ">Select Qualification:</option>
+            <option value="Graduation">Graduation</option>
+            <option value="BTech.">BTech.</option>
+            <option value="MTech.">MTech.</option>
+            <option value="MCA">MCA</option>
+            <option value="BCA">BCA</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="specialization">Track:</label>
+        </div>
+        <div class="col-90">
+          <input
+            type="checkbox"
+            class="specialization"
+            id="cs"
+            name="specialization[]"
+            value="IT Technical Support"
+          />IT Technical Support<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="it"
+            name="specialization[]"
+            value="Software Development"
+          />Software Development<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="ca"
+            name="specialization[]"
+            value="Network Engineering"
+          />Network Engineering<br />
+          <input
+            type="checkbox"
+            class="specialization"
+            id="tc"
+            name="specialization[]"
+            value="Product Management"
+          />Product Management<br />
+        <input
+            type="checkbox"
+            class="specialization"
+            id="pd"
+            name="specialization[]"
+            value="Product Design"
+          />Product Design<br />
+        <input
+            type="checkbox"
+            class="specialization"
+            id="tc"
+            name="specialization[]"
+            value="Data Analysis"
+          />Data Analysis<br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10">
+          <label for="password">Password:</label>
+        </div>
+        <div class="col-90">
+          <input type="password" id="password" name="password" maxlength="8" />
+        </div>
+      </div>
+      <div class="row">
+        <input
+          type="submit"
+          value="Register"
+          id="register"
+          onclick="SaveStudentDetails()"
+        />
+      </div>
+    </div>
+    <footer>
+      <div class="footer__container">
+        <div class="logo2">
+          <div class="logo__bottom">
+            <p>Genius</p>
+            <p>Cave</p>
+          </div>
+          <div class="additional_info">
+            Start off with us today as we walk with you on a new path.
+          </div>
+        </div>
+        <div class="info">
+          <div class="company_info">
+            <a href="#" class="info__text">Company</a>
+            <a href="#" class="info__text">Track</a>
+            <a href="#" class="info__text">Academy</a>
+            <a href="#" class="info__text">FAQs</a>
+            <a href="#" class="info__text">Work with us </a>
+          </div>
+        </div>
+        <div class="contacts">
+          <p class="info__title">Contact us on:</p>
+          <a href="#" class="email">techinfo@geniuscave.org</a>
+          <div class="media">
+            <a href="#"><img src="../Assets/LinkedIn (1).svg" alt="" /></a>
+            <a href="#"><img src="../Assets/Instagram Circle.svg" alt="" /></a>
+            <a href="#"><img src="../Assets/Facebook.svg" alt="" /></a>
+            <a href="#"><img src="../Assets/Twitter Squared.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="exiting_info">
+        <p>Copyright &copy; 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
