@@ -85,7 +85,7 @@ a {
 }
 
 .top {
-  background-image: url("images/om-kamath-eL_FERodaT4-unsplash (1).jpg");
+  background-image: url("../images/om-kamath-eL_FERodaT4-unsplash (1).jpg");
   background-color: #8e349d;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,6 +157,10 @@ button {
   text-decoration: none;
 }
 
+#wait {
+  width: 15%;
+  cursor: pointer;
+}
 
 .titles {
   text-align: center;
